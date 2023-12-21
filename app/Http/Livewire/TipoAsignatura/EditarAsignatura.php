@@ -2,19 +2,10 @@
 
 namespace App\Http\Livewire\TipoAsignatura;
 
+use App\Models\TipoAsignatura;
 use Livewire\Component;
 
 class EditarAsignatura extends Component
-{
-    <?php
-
-namespace App\Http\Livewire\Semestres;
-
-use App\Models\Semestre;
-use App\Models\TipoAsignatuta;
-use Livewire\Component;
-
-class EditarSemestre extends Component
 {
     public $open_editar =false;
     public $tipoasignatura;
@@ -24,15 +15,15 @@ class EditarSemestre extends Component
 
     ];
 
-    public function mount(TipoAsignatuta $semestre)
+    public function mount(TipoAsignatura $tipoAsignatura)
     {
-        $this->semestre = $semestre;
+        $this->$tipoAsignatura = $tipoAsignatura;
     }
     public function save()
     {
         $this->validate();
 
-        $this->semestre->save();
+        $this->tipoasignatura->save();
         $this->reset(['open_editar',  'nombre']);
 
         $this->emit('render');
@@ -40,12 +31,9 @@ class EditarSemestre extends Component
     }
     public function render()
     {
-        return view('livewire.semestres.editar-semestre');
-    }
-}
-
-    public function render()
-    {
         return view('livewire.tipo-asignatura.editar-asignatura');
     }
 }
+
+
+
