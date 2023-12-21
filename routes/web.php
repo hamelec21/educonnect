@@ -34,7 +34,7 @@ Route::middleware([
 |
 */
 Route::middleware(['auth:sanctum', 'verified'])->group(function () {
-    Route::get('/semestres/show-semestres', \App\Http\Livewire\Semestres\ShowSemestres::class)->name('show-rol');
+    Route::get('/semestres/show-semestres', \App\Http\Livewire\Semestres\ShowSemestres::class)->name('show-semestres');
 });
 
 
