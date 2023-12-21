@@ -10,7 +10,7 @@ class ShowSemestres extends Component
 {
     use WithPagination;
     public $search;
-    
+
     protected $listeners = ['render' => 'render'];
 
     public function updatingSearch()
@@ -22,7 +22,6 @@ class ShowSemestres extends Component
         $semestres = Semestre::buscar($this->search)
         ->orderBy('id','ASC')
         ->paginate(10);
-
         return view('livewire.semestres.show-semestres',compact('semestres'));
     }
 }
