@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+
+
+/*Botones*/
+
+.btn {
+    @apply  font-bold text-white py-2 px-4 rounded-xl shadow-lg cursor-pointer;
+}
+.btn-eliminar {
+    @apply bg-red-600 text-white hover:bg-red-700 rounded-md px-4 py-2;
+}
+.btn-editar {
+    @apply  bg-yellow-400 hover:bg-yellow-300 ;
+}
+.btn-agregar{
+    @apply  text-white bg-gradient-to-r from-sky-600 to-cyan-400 rounded-md px-4 py-2 ;
+}
+.btn-ver {
+    @apply  bg-green-600 hover:bg-green-500 ;
+}
+
+
+.btn-confirmar {
+    @apply  bg-green-600 hover:bg-green-500 rounded-md px-4 py-2 text-white;
+}
+
+
+.btn-entrega {
+    @apply  bg-amber-600 hover:bg-amber-500  rounded-md px-4 py-2 text-white;
+}
+
+
+/*
+Estados
+*/
+
+.status{
+    @apply  py-1 px-3 rounded-full text-xs;
+}
+
+.status-verde
+{
+    @apply bg-green-200 text-green-700;
+}
+
+.status-rojo{
+    @apply bg-red-200 text-red-700;
+}
+
+.status-azul {
+    @apply bg-blue-200 text-blue-700;
+}
+
+
+.alert-info{
+    @apply bg-blue-500 text-white font-bold rounded-t px-4 py-2;
+
+}
+.alert-success{
+    @apply bg-green-400 text-white font-bold rounded-t px-4 py-2;
+}
+.alert-danger{
+   @apply bg-red-500 text-white font-bold rounded-t px-4 py-2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@tailwind utilities;
+
+[x-cloak] {
+    display: none;
+}
