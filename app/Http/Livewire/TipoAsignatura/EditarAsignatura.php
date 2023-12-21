@@ -11,19 +11,20 @@ class EditarAsignatura extends Component
 namespace App\Http\Livewire\Semestres;
 
 use App\Models\Semestre;
+use App\Models\TipoAsignatuta;
 use Livewire\Component;
 
 class EditarSemestre extends Component
 {
     public $open_editar =false;
-    public $semestre;
+    public $tipoasignatura;
     public $nombre;  // variables publicas del formularios // variables publicas del formularios
     protected $rules =[
-        'semestre.nombre' => 'required',
+        'tipoasignatura.nombre' => 'required',
 
     ];
 
-    public function mount(Semestre $semestre)
+    public function mount(TipoAsignatuta $semestre)
     {
         $this->semestre = $semestre;
     }

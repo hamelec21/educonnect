@@ -2,6 +2,7 @@
 
 namespace App\Http\Livewire\TipoAsignatura;
 
+use App\Models\TipoAsignatuta;
 use Livewire\Component;
 
 class CrearAsignatura extends Component
@@ -16,7 +17,7 @@ class CrearAsignatura extends Component
     public function save()
     {
         $this-> validate();
-        Semestre::create([
+        TipoAsignatuta::create([
             'nombre' => $this->nombre,
         ]);
         $this->reset(['open_crear', 'nombre']);
