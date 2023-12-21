@@ -37,6 +37,17 @@ Route::middleware(['auth:sanctum', 'verified'])->group(function () {
     Route::get('/semestres/show-semestres', \App\Http\Livewire\Semestres\ShowSemestres::class)->name('show-semestres');
 });
 
+/*
+|--------------------------------------------------------------------------
+| Rutas tipos asignaturas
+|--------------------------------------------------------------------------
+|
+*/
+Route::middleware(['auth:sanctum', 'verified'])->group(function () {
+    Route::get('/tipo-asignatura/show-asignatura', \App\Http\Livewire\Asignaturas\ShowAsignaturas::class)->name('show-asignatura');
+});
+
+
 
 
 
