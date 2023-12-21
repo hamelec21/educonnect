@@ -27,14 +27,31 @@ Route::middleware([
     })->name('dashboard');
 });
 
+/*
+|--------------------------------------------------------------------------
+| Rutas de Semestres
+|--------------------------------------------------------------------------
+|
+*/
+Route::middleware(['auth:sanctum', 'verified'])->group(function () {
+    Route::get('/semestres/show-semestres', \App\Http\Livewire\Semestres\ShowSemestres::class)->name('show-rol');
+});
+
+
+
+
+
+
+
+
+
+
+
+
 Route::middleware(['auth:sanctum', 'verified'])->group(function () {
     Route::get('/curso/show', \App\Http\Livewire\Curso\Show::class)->name('show-curso');
     Route::get('/statu/show', \App\Http\Livewire\Statu\Show::class)->name('show-estado');
     Route::get('/alumno/show', \App\Http\Livewire\Alumno\Show::class)->name('show-alumno');
-
-
-
-
 
     /**rutas de modulo prestamos equipos Equipos**/
 
