@@ -107,4 +107,3 @@
 
     <script src="{{ asset('js/validar_rut.js') }}"></script>
 </div>
-

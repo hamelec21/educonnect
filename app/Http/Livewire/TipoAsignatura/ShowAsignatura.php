@@ -19,10 +19,10 @@ class ShowAsignatura extends Component
     }
     public function render()
     {
-        $tipoasignatura = TipoAsignatura::buscar($this->search)
+        $tipoasignaturas = TipoAsignatura::buscar($this->search)
         ->orderBy('id','ASC')
         ->paginate(10);
-        return view('livewire.tipo-asignatura.show-asignatura',compact('tipoasignatura'));
+        return view('livewire.tipo-asignatura.show-asignatura',compact('tipoasignaturas'));
     }
 }
 

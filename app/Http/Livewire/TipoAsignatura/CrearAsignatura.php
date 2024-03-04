@@ -22,7 +22,7 @@ class CrearAsignatura extends Component
         ]);
         $this->reset(['open_crear', 'nombre']);
         $this->emit('render');
-        $this->emit('insert', 'El Registro fue Creado Exitosamente');
+        $this->emit('insert');
     }
     public function render()
     {

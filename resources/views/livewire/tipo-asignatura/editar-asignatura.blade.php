@@ -22,7 +22,7 @@
 
                         <div class=" text-left text-gray-900 font-bold py-1 text-sm px-4 mb-4">
                             <label class="px-2">Nombre Semestre</label>
-                            <input type="text" name="Tipo" id="" placeholder="Ejemplo(Activo)" wire:model="semestre.nombre"
+                            <input type="text" name="Tipo" id="" placeholder="Ejemplo(Activo)" wire:model="tipoasignatura.nombre"
                                    class=" rounded-lg border-transparent flex-1 appearance-none border border-gray-400 w-full py-1 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent">
                             @error('nombre') <span class="error text-red-600 text-xs">{{ $message }}</span> @enderror
                         </div>

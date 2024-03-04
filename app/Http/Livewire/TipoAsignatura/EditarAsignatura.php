@@ -7,10 +7,10 @@ use Livewire\Component;
 
 class EditarAsignatura extends Component
 {
-    public $open_editar =false;
+    public $open_editar = false;
     public $tipoasignatura;
     public $nombre;  // variables publicas del formularios // variables publicas del formularios
-    protected $rules =[
+    protected $rules = [
         'tipoasignatura.nombre' => 'required',
 
     ];
@@ -34,6 +34,3 @@ class EditarAsignatura extends Component
         return view('livewire.tipo-asignatura.editar-asignatura');
     }
 }
-
-
-

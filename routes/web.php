@@ -44,20 +44,8 @@ Route::middleware(['auth:sanctum', 'verified'])->group(function () {
 |
 */
 Route::middleware(['auth:sanctum', 'verified'])->group(function () {
-    Route::get('/tipo-asignatura/show-asignatura', \App\Http\Livewire\Asignaturas\ShowAsignaturas::class)->name('show-asignatura');
+    Route::get('/tipo-asignatura/show-asignatura', \App\Http\Livewire\TipoAsignatura\ShowAsignatura::class)->name('show-asignatura');
 });
-
-
-
-
-
-
-
-
-
-
-
-
 
 Route::middleware(['auth:sanctum', 'verified'])->group(function () {
     Route::get('/curso/show', \App\Http\Livewire\Curso\Show::class)->name('show-curso');
@@ -134,8 +122,6 @@ Route::get('/frontend/carro4/consulta/', \App\Http\Livewire\Frontend\Carro4\Cons
 Route::get('/frontend/carro4/consulta-devolucion/', \App\Http\Livewire\Frontend\Carro4\ConsultaDevolucion::class)->name('carro4.consulta-devolucion');
 Route::get('/frontend/carro4/crear-prestamo/{rut}', \App\Http\Livewire\Frontend\Carro4\CrearPrestamo::class)->name('carro4.crear-prestamo');
 Route::get('/frontend/carro4/crear-devolucion/{rut}', \App\Http\Livewire\Frontend\Carro4\CrearDevolucion::class)->name('carro4.crear-devolucion');
-
-
 /*
 |--------------------------------------------------------------------------
 | rutas Roles - persisos - usuarios
@@ -146,7 +132,4 @@ Route::middleware(['auth:sanctum', 'verified'])->group(function () {
     Route::get('/seguridad/roles/show-rol', \App\Http\Livewire\Seguridad\Roles\ShowRol::class)->name('show-rol');
     Route::get('/seguridad/permiso/show-permiso', \App\Http\Livewire\Seguridad\Permiso\ShowPermiso::class)->name('show-permiso');
     Route::get('/seguridad/usuario/show-usuario', \App\Http\Livewire\Seguridad\Usuario\ShowUsuario::class)->name('show-usuario');
-
-
-
 });
