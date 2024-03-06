@@ -62,11 +62,32 @@
                         <span class="text-gray-600 group-hover:text-cyan-600">Estados</span>
                     </a>
                 </li>
+{{--
+                <li>
+                    <a href="{{route('show-profesores')}}" class="px-4 py-1 flex items-center space-x-4 rounded-md text-gray-600 group">
+                        <i class="fas fa-chevron-circle-right text-gray-600 group-hover:text-cyan-600"></i>
+                        <span class="text-gray-600 group-hover:text-cyan-600">Profesores</span>
+                    </a>
+                </li>
 
                 <li>
-                    <a href="#" class="px-4 py-1 flex items-center space-x-4 rounded-md text-gray-600 group">
+                    <a href="{{route('show-carga-horaria')}}" class="px-4 py-1 flex items-center space-x-4 rounded-md text-gray-600 group">
                         <i class="fas fa-chevron-circle-right text-gray-600 group-hover:text-cyan-600"></i>
-                        <span class="text-gray-600 group-hover:text-cyan-600">Tipo Consulta</span>
+                        <span class="text-gray-600 group-hover:text-cyan-600">Carga Horaria</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="{{route('show-asignaturas')}}" class="px-4 py-1 flex items-center space-x-4 rounded-md text-gray-600 group">
+                        <i class="fas fa-chevron-circle-right text-gray-600 group-hover:text-cyan-600"></i>
+                        <span class="text-gray-600 group-hover:text-cyan-600">Asignaturas</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="{{route('show-semestres')}}" class="px-4 py-1 flex items-center space-x-4 rounded-md text-gray-600 group">
+                        <i class="fas fa-chevron-circle-right text-gray-600 group-hover:text-cyan-600"></i>
+                        <span class="text-gray-600 group-hover:text-cyan-600">Semestres</span>
                     </a>
                 </li>
 
@@ -107,7 +128,7 @@
                 </li>
             </ul>
 
-
+--}}
         </div>
         <form method="POST" action="{{ route('logout') }}" x-data>
             @csrf
